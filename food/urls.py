@@ -18,6 +18,8 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from app import views
+from django.views.static import serve
+from django.conf.urls import url
 
 
 urlpatterns = [
@@ -32,7 +34,10 @@ urlpatterns = [
     path('reviews/',views.reviews,name='reviews'), 
     path('specials/',views.specials,name='specials'),
     path('menu/details/<int:id>',views.details,name='details'),
-    path('details/<int:id>',views.details,name='details')
+    path('details/<int:id>',views.details,name='details'),
+
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
     
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])

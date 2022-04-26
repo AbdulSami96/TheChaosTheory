@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Chef On Call</title>
+    {%load static%}
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png '%}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png '%}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css '%}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Delicious - v4.7.1
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+            <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+            <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <div class="logo me-auto">
+                <h1><a href="index">Chef On Call</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link " href="{% url 'index'%}">Home</a></li>
+                    <li><a class="nav-link active" href="{% url 'about'%}">About</a></li>
+                    <li><a class="nav-link " href="{% url 'menu'%}">Menu</a></li>
+                    <li><a class="nav-link " href="{% url 'specials'%}">Specials</a></li>
+                    <li><a class="nav-link " href="{% url 'events'%}">Events</a></li>
+                    <li><a class="nav-link " href="{% url 'chefs'%}">Chefs</a></li>
+                    <li><a class="nav-link " href="{% url 'gallery'%}">Gallery</a></li>
+                    <li><a class="nav-link " href="{% url 'reviews'%}">Reviews</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a href="{% url 'contact'%}" class="book-a-table-btn">Contact</a>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background-image: url({%static 'assets/img/slide/slide-1.jpg'%});">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>About</span> Us</h2>
+                                <div>
+                                    <a href="{% url 'menu'%}" class="btn-menu animate__animated animate__fadeInUp ">Our Menu</a>
+                                    <a href="{% url 'contact'%}" class="btn-book animate__animated animate__fadeInUp ">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" style="background-image: url({%static 'assets/img/slide/slide-2.jpg'%});">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>About</span> Us</h2>
+                                <div>
+                                    <a href="{% url 'menu'%}" class="btn-menu animate__animated animate__fadeInUp">Our Menu</a>
+                                    <a href="{% url 'contact'%}" class="btn-book animate__animated animate__fadeInUp">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" style="background-image: url({%static 'assets/img/slide/slide-3.jpg'%});">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>About</span> Us</h2>
+                                <div>
+                                    <a href="{% url 'menu'%}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                                    <a href="{% url 'contact'%}" class="btn-book animate__animated animate__fadeInUp scrollto">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-lg-5 align-items-stretch video-box" style="background-image: url({%static 'assets/img/about.jpg'%});">
+                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                    </div>
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+                        <div class="content">
+                            <h3>Memorable journey of our resturant<strong> Chef On Call!</strong></h3>
+                            <p>
+                                Since our modest beginnings in 2005 with a little space in Toronto’s stylish Yorkville locale, ‘Organization Name’ ‘s development has been enlivened with the energy to cook and serve solid, Pakistani-roused takeout food.
+                            </p>
+                            <p class="fst-italic">
+                                Restaurants provide you with different cuisines of food to satisfy your hunger. The food preparation and presentation gives you a happy feel during your dull
+                            </p>
+                            <ul>
+                                <li><i class="bx bx-check-double"></i> The ambiance that a restaurant provides you with gives one all the more reason to visit to cherish their time.</li>
+                                <li><i class="bx bx-check-double"></i> You get to explore places when you plan to visit a restaurant.</li>
+                                <li><i class="bx bx-check-double"></i> The restaurant is a life savior when one doesn’t feel like cooking or wants to eat something else.</li>
+                            </ul>
+                            <p>
+                                Restaurant provides with all the amenities that one requires for a shift of mood or change in environment to cherish the pleasant atmosphere and enjoy different cuisines to satisfy your hunger.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+        <!-- ======= Whu Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Why choose <span>Our Restaurant</span></h2>
+                    <p>Choose a restaurant you can walk to. When you want to have a great time, driving afterwards can pose a real problem.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box">
+                            <span>01</span>
+                            <h4>Value Matters</h4>
+                            <p>Choose a Restaurant That Gives Good Value</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box">
+                            <span>02</span>
+                            <h4>Excellent SErvice</h4>
+                            <p>Service in a Restaurant - Give the Best to the Customer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box">
+                            <span>03</span>
+                            <h4>Hygiene in the Restaurant</h4>
+                            <p>You may just want to check out the restaurant before you decide to book a table. Have a drink first and check out the place.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Whu Us Section -->
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Chef On Call</h3>
+            <p>Don't wait, just call! we're just a step away. Try it out our most demanding dishes.</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Chef On Call</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>

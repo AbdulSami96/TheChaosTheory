@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Chef On Call</title>
+    {%load static%}
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{%static 'assets/img/favicon.png'%}" rel="icon">
+    <link href="{%static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{%static 'assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+    <link href="{%static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{%static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+    <link href="{%static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+    <link href="{%static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+    <link href="{%static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{%static 'assets/css/style.css'%}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Delicious - v4.7.1
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+            <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+            <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <div class="logo me-auto">
+                <h1><a href="index">Chef On Call</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link " href="{% url 'index'%}">Home</a></li>
+                    <li><a class="nav-link " href="{% url 'about'%}">About</a></li>
+                    <li><a class="nav-link " href="{% url 'menu'%}">Menu</a></li>
+                    <li><a class="nav-link active" href="{% url 'specials'%}">Specials</a></li>
+                    <li><a class="nav-link " href="{% url 'events'%}">Events</a></li>
+                    <li><a class="nav-link " href="{% url 'chefs'%}">Chefs</a></li>
+                    <li><a class="nav-link " href="{% url 'gallery'%}">Gallery</a></li>
+                    <li><a class="nav-link " href="{% url 'reviews'%}">Reviews</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a href="{% url 'contact'%}" class="book-a-table-btn">Contact</a>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background-image: url({%static 'assets/img/slide/slide-1.jpg'%});">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>Our</span> Specials</h2>
+                                <div>
+                                    <a href="{% url 'menu'%}" class="btn-menu animate__animated animate__fadeInUp ">Our Menu</a>
+                                    <a href="{% url 'contact'%}" class="btn-book animate__animated animate__fadeInUp ">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" style="background-image: url({%static 'assets/img/slide/slide-2.jpg'%});">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>Our</span> Specials</h2>
+                                <div>
+                                    <a href="{% url 'menu'%}" class="btn-menu animate__animated animate__fadeInUp">Our Menu</a>
+                                    <a href="{% url 'contact'%}" class="btn-book animate__animated animate__fadeInUp">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" style="background-image: url({%static 'assets/img/slide/slide-3.jpg'%});">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>Our</span> Specials</h2>
+                                <div>
+                                    <a href="{% url 'menu'%}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                                    <a href="{% url 'contact'%}" class="btn-book animate__animated animate__fadeInUp scrollto">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+    <main id="main">
+
+        <!-- ======= Specials Section ======= -->
+        <section id="specials" class="specials">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Check our <span>Specials</span></h2>
+                    <p>Here u go for our most special dishes. That people loves the most.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="nav nav-tabs flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Chicken Alfredo Paasta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Chicken Biryani</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Zinger Burger</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Reshmi Chicken</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Chicken Fajita Pizza</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 mt-4 mt-lg-0">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Chicken Alfredo Pasta</h3>
+                                        <p class="fst-italic">Chicken Alfredo Pasta the most hit and special dish of our resturant.</p>
+                                        <p>Pasta is something that people's loves the most in lunch. snacks and even in dinner. It's sauce is so delicious and mouth watering. Try our resuturant's Chicken Alfredo Pasta, U'll surely love it!</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="{%static 'assets/img/Chicken-Alfredo-Pasta (1).jpg'%}" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-2">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Chicken Biryani</h3>
+                                        <p class="fst-italic">The most favourite Pakistani dish and the most eatable.</p>
+                                        <p>Chicken Biryani – a highly aromatic and well-seasoned one-pot dish originally from India that has a perfect balance of chicken meat, rice and veggies that’s going to excite and linger on your taste buds. A simpler
+                                            version that is way too good that it’ll appear regularly in your weekly menu!
+
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="{%static 'assets/img/chicken-biryani-1.jpg'%}" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-3">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Zinger Burger</h3>
+                                        <p class="fst-italic">Zinger Burger? And of Chef On Call? Why not! Give a try our most special Zinger Burger.</p>
+                                        <p>A well-seasoned, crispy fried chicken fillet slathered with a special burger sauce, topped with a slice of Cheddar cheese, finished off with Romaine lettuce and put inside a soft Broiche bun; this is what dreams
+                                            are made of.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="{%static 'assets/img/zingerburger.jpg'%}" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-4">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Reshmi Chicken</h3>
+                                        <p class="fst-italic">The most hit dish of our resturant. People love it most!</p>
+                                        <p>Chicken Reshmi Grilled chicken breast marinated in a spiced-yogurt blend, topped with shredded lettuce & red cabbage. Finished with cilantro mint chutney and a creamy yogurt sauce.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="{%static 'assets/img/maxresdefault.jpg'%}" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-5">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Chicken Fajita Pizza</h3>
+                                        <p class="fst-italic">It is the most ordered pizza of our resturant. Don't forget to give a try.</p>
+                                        <p>poon bread is comfort food perfection — it's irresistibly soft, moist, and carbohydrate-laden enough to elicit a nice warm nap. It stands at a crossroads between cornbread and casserole.</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="{%static 'assets/img/th.jpg'%}" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Specials Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Chef On Call</h3>
+            <p>Don't wait, just call! we're just a step away. Try it out our most demanding dishes.</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Chef On Call</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{%static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{%static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+    <script src="{%static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+    <script src="{%static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+
+    <!-- Template Main JS File -->
+    <script src="{%static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
